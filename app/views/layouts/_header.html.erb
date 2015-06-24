@@ -1,13 +1,44 @@
+<!DOCTYPE html>
 
-<header class="navbar navbar-fixed-top navbar-default">
-  <div class="container">
-    <%= link_to "<i class='fa fa-leaf'></i> <strong><font color='white'>Flower Finder</font></strong>".html_safe, root_path, class: "navbar-brand" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<html lang="en">
+    <div id="wrapper" style="margin-top:-60px">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <strong>Prian Kuhanandan</strong>
+                    </a>
+                </li>
+                <li id="projects">
+                    <%= link_to "Projects", projects_path %>
+                </li>
+                <li id="resume">
+                    <%= link_to "Resume", resume_path %>
+                </li>
+                <li id="about">
+                    <%= link_to "About Me", about_path %>
+                </li>
+                <li id="contact">
+                    <%= link_to "Contact", contact_path %>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        
+
+    </div>
+    <!-- /#wrapper -->
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</html>
