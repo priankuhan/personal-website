@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   get 'projects' => 'static_pages#projects'
   get 'resume' => 'static_pages#resume'
+  
+  get '/random_background.jpg', to: 'application#image'
 
 end

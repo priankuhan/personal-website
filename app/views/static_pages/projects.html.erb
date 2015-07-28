@@ -1,10 +1,43 @@
-<div id="page-content-wrapper" style="padding-left:10px">
+<% provide(:title, "Projects") %>
+<div id="page-content-wrapper" style="padding-left:0px">
       <div class="container-fluid">
-          <div class="row">
-              <div class="col-lg-12 text-left">
-                  <h1>Projects</h1>
-                  
-              </div>
+          <div class="row" style="padding-bottom:60px">
+            <div class="col-lg-12 dimmed">
+                <h1><strong>Projects</strong></h1>
+            </div>
+          </div>
+          <div class="row dimmed">
+            <div class="col-sm-6">
+              <br>
+              <%= link_to image_tag("wildflowers.png", id: "picture",  class: "img-responsive"), "http://www.wildflowerfinder.com" %>
+              <br>
+            </div>
+            <div class="col-sm-6">
+              <h3><strong>Wildflower Finder</strong></h3>
+              www.wildflowerfinder.com
+              <br><br>
+              An online step-by-step wildflower identifier for wildflowers of Eastern North America. 
+              Built using Ruby on Rails with PostgreSQL, and deployed on Heroku.
+              <br>
+            </div>
+          </div>
+          <br>
+          <div class="row dimmed">
+            <div class="col-sm-3">
+              <br>
+              <%= link_to image_tag("bird_menu.png", id: "picture",  class: "img-responsive"), "https://github.com/priankuhan/Birds-of-Ontario" %>
+              <br>
+            </div>
+            <div class="col-sm-3">
+              <br>
+              <%= link_to image_tag("bird_menu.png", id: "picture",  class: "img-responsive"), "https://github.com/priankuhan/Birds-of-Ontario" %>
+              <br>
+            </div>
+            <div class="col-sm-6">
+              <h3><strong>Birds of Ontario</strong></h3>
+              Native android application to help players learn to identify birds of Eastern North America, as well as their calls. 
+              <br>
+            </div>
           </div>
       </div>
   </div>

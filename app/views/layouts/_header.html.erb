@@ -7,21 +7,19 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                        <strong>Prian Kuhanandan</strong>
-                    </a>
+                    <%= link_to "<strong>Prian Kuhanandan</strong>".html_safe, root_path %>
                 </li>
                 <li id="projects">
-                    <%= link_to "Projects", projects_path %>
+                    <%= link_to "<div class='sidetext1'>Projects</div>".html_safe, projects_path %>
                 </li>
                 <li id="resume">
-                    <%= link_to "Resume", resume_path %>
+                    <%= link_to "<div class='sidetext2'>Resume</div>".html_safe, resume_path %>
                 </li>
                 <li id="about">
-                    <%= link_to "About Me", about_path %>
+                    <%= link_to "<div class='sidetext3'>About Me</div>".html_safe, about_path %>
                 </li>
                 <li id="contact">
-                    <%= link_to "Contact", contact_path %>
+                    <%= link_to "<div class='sidetext4'>Contact</div>".html_safe, contact_path %>
                 </li>
             </ul>
         </div>

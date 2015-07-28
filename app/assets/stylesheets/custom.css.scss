@@ -293,20 +293,34 @@ span.picture {
   }
 }
 
-.sidebar-nav>#projects:hover{
-    color: #333;
-    background-color: #FF3300;
+.sidebar-nav>#projects:hover .sidetext1{
+    color: #000;
+    background-color: #fff;
     }
-.sidebar-nav>#resume:hover{
-    color: #333;
-    background-color: #FF9900;
-    font-color: #000000
+.sidebar-nav>#resume:hover .sidetext2{
+    color: #000;
+    background-color: #fff;
     }
-.sidebar-nav>#about:hover{
-    color: #333;
-    background-color: #009900;
+.sidebar-nav>#about:hover .sidetext3{
+    color: #000;
+    background-color: #fff;
     }
-.sidebar-nav>#contact:hover{
-    color: #333;
-    background-color: #000099;
+.sidebar-nav>#contact:hover .sidetext4{
+    color: #000;
+    background-color: #fff;
     }
+
+
+.full {
+    background:url("vetch.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+.dimmed {
+  background: rgba(255,255,255,.8);
+  
+}

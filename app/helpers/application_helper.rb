@@ -10,4 +10,9 @@ module ApplicationHelper
     end
   end
   
+  def randomized_background_image
+    images = ["vetch.jpg", "apostles.jpg", "lake.jpg", "stones.jpg", "stairs.jpg", "sunrise.jpg", "sunset.jpg", "tent.jpg", "loons.jpg"]
+    images[rand(images.size)]
+  end
+  
 end
